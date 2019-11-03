@@ -1,0 +1,52 @@
+._css_margin {
+    &--top-md {
+        margin-top: 50px;
+    }
+    &-top--sm {
+        margin-top: 15px;
+    }
+    &__left-auto {
+        margin-left: auto;
+    }
+    &-down--sm {
+        margin-bottom: 10px;
+    }
+    &-down--md {
+        margin-bottom: 15px;
+    }
+    &--down-xsm {
+        margin-bottom: 5px;
+    }
+    &--right{
+        &-xs{
+            margin-right: 8px;
+        }
+    }
+    &--left{
+        &-xs{
+            margin-left: 8px;
+        }
+    }
+}
+
+._css_padding{
+    &--md{
+        padding: 15px;
+    }
+    &--sm{
+        padding: 10px;
+    }
+    &--right{
+        &-xs{
+            padding-right: 8px;
+        }
+    }
+    &-down{
+        &--sm{
+            padding-bottom: 10px;
+        }
+        &--md{
+            padding-bottom: 15px;
+        }
+    }
+}

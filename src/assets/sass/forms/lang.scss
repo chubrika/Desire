@@ -1,0 +1,21 @@
+._css_lang {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center; 
+    // flex-direction: column;
+    height: 35px;
+    overflow: hidden;
+    button {
+        display: flex;
+        height: 100%;
+        padding: 10px 10px;
+        margin: 0 auto; 
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(30, 30, 31, 0.85);
+    }
+}
+
+._css_lang:hover {
+    overflow: visible;
+}

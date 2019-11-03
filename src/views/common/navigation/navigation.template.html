@@ -1,0 +1,39 @@
+<span class="_css_logo" [routerLink]="['./home']"></span>
+<ul class="_css_nav" [ngClass]="{'_css_show_menu':showMenu}">
+    <li [ngClass]="{_css_active: activeRoute('home')}">
+        <a [routerLink]="['./home']" class="_css_nav__item" (click)="clickRoute()">
+            <span class="_css_nav__tooltip">მთავარი</span>
+        </a>
+    </li>
+    <li [ngClass]="{_css_active: activeRoute('companies')}">
+        <a [routerLink]="['./companies']" class="_css_nav__item" (click)="clickRoute()">
+            <span class="_css_nav__tooltip">კომპანიები</span>
+        </a>
+    </li>
+    <li [ngClass]="{_css_active: activeRoute('news')}">
+        <a [routerLink]="['./news']" class="_css_nav__item" (click)="clickRoute()">
+            <span class="_css_nav__tooltip">სიახლე</span>
+        </a>
+    </li>
+
+    <li [ngClass]="{_css_active: activeRoute('contact')}">
+        <a [routerLink]="['./contact']" class="_css_nav__item" (click)="clickRoute()">
+            <span class="_css_nav__tooltip">კონტაქტი</span>
+        </a>
+    </li> 
+    <li [ngClass]="{_css_active: activeRoute('sliderEdit')}">
+        <a [routerLink]="['./sliderEdit']" class="_css_nav__item" (click)="clickRoute()">
+            <span class="_css_nav__tooltip">სლაიდერის დამატება / რედაქტირება</span>
+        </a>
+    </li>
+    <li class="_css_margin__left-auto">
+        <a [routerLink]="['./login']" class="_css_nav__login _css_nav__item">
+            <span class="_css_nav__login-text">ავტორიზაცია</span>
+        </a>
+    </li>
+</ul>
+<!-- <langs></langs> -->
+<div class="_css_hamburger">
+    <button class="_css_icon-menu" (click)="showMenu=!showMenu" *ngIf="!showMenu"></button>
+    <button class="_css_icon-cross" (click)="showMenu=!showMenu" *ngIf="showMenu"></button>
+</div>

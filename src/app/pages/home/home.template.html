@@ -1,0 +1,380 @@
+<div class="_css_flex _css_flex--column _css_padding--md" *ngIf="homeView==='home'">
+  <span class="_css_round _css_margin-down--sm">
+
+  </span>
+  <span class="_css_text--bold _css_text--lg _css_margin-down--sm">
+    My Desires
+  </span>
+  <span class="_css_text--md _css_margin-down--md">
+    Your total saving is $2 344
+  </span>
+
+  <div class="_css_flex _css_flex--between _css_margin-down--sm">
+    <button class="_css_full--width _css_margin--right-xs" (click)='changeView("dialog")'>
+      <span class="fas fa-plus _css_padding--right-xs"></span>
+      Create
+    </button>
+    <button class="_css_full--width _css_margin--right-xs">
+      <span class="fas fa-globe-americas _css_padding--right-xs"></span>
+      Insight
+    </button>
+    <button class="_css_full--width _css_margin--right-xs">
+      <span class="fab fa-buffer _css_padding--right-xs"></span>
+      Explore
+    </button>
+  </div>
+  <div class="_css_border _css_margin-down--md">
+  </div>
+
+  <span class="_css_text--md _css_text--bold  _css_margin-down--md">
+    Challange
+  </span>
+  <div class="_css_card _css_padding--sm _css_margin-down--md">
+    <span class="_css_margin-down--sm">
+      Your friend supported to you
+    </span>
+    <div class="_css_flex _css_flex--align">
+      <span class="_css_round-orange _css_margin--right-xs">
+      </span>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          Special offer
+        </span>
+        <span>
+          with Zoommer
+        </span>
+      </div>
+      <button class="_css_margin-auto" (click)="changeView('details')">
+        Open
+      </button>
+    </div>
+  </div>
+
+  <span class="_css_text--md _css_text--bold  _css_margin-down--md">
+    Ongoing Desires
+  </span>
+
+  <div class="_css_flex">
+    <div class="_css_flex _css_flex--column _css_flex--between _css_ongoing _css_margin--right-xs"
+      (click)="goDetails()">
+      <span class="_css_ongoing-icon">
+
+      </span>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold _css_margin-down--sm">
+          Apple Wath Sries 5
+        </span>
+        <div class="_progress-wrapp _css_margin-down--sm">
+          <div class="_progress-content _progress-40">
+
+          </div>
+        </div>
+        <span class="_css_text--bold">
+          40%
+        </span>
+      </div>
+    </div>
+    <div class="_css_flex _css_flex--column _css_flex--between _css_ongoing">
+      <span class="_css_ongoing-icon">
+
+      </span>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold _css_margin-down--sm">
+          Summer Camping
+        </span>
+        <div class="_progress-wrapp _css_margin-down--sm">
+          <div class="_progress-content _progress-10">
+
+          </div>
+        </div>
+        <span class="_css_text--bold">
+          10%
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+<div class="_css_modal" *ngIf="homeView==='dialog'">
+  <div class="_css_flex _css_flex--center _css_flex--align _css_position-r _css_padding--md _css_border-header">
+    <span class="_close" (click)="changeView('home')">x</span>
+    <span class="_css_text--bold _css_text--md">
+      What do You desire?
+    </span>
+  </div>
+  <div class="_css_flex _css_flex--column _css_padding--md _css_full--height">
+    <span class="_css_text--bold _css_text--md">
+      Name it
+    </span>
+    <input type="text" placeholder="Just name it here" />
+    <span class="_css_text--bold  _css_text--md">
+      How much do you need?
+    </span>
+    <input type="number" placeholder="00.00 GEL" />
+    <span class="_css_text--bold _css_margin-down--sm _css_text--md">
+      When do you need it?
+    </span>
+    <span>In 1 month</span>
+  </div>
+  <div class="_css_border-header">
+
+  </div>
+  <div class="_css_flex _css_flex--center _css_flex--align _css_padding--sm">
+    <button class="_css_full--width" (click)="changeView('editView')">Next</button>
+  </div>
+</div>
+
+<div class="_css_position-r" *ngIf="homeView==='editView'">
+  <div class="_css_flex _css_flex--between _css_flex--align _css_position-r _css_padding--md _css_border-header">
+    <span class="_close _css_position-r" (click)="changeView('home')">x</span>
+    <span class="_css_text--bold _css_text--md">
+      Apple Wath Series 5
+    </span>
+    <button (click)="changeView('home')"> save</button>
+  </div>
+
+  <div class="_css_padding--md _css_flex _css_flex--column">
+    <div class="_css_flex _css_flex--between _css_margin-down--sm">
+      <span>Today</span>
+      <span>31 Dec 2019</span>
+    </div>
+    <div class="_progress-wrapp _css_margin-down--sm">
+      <div class="_progress-content _progress-10">
+      </div>
+    </div>
+    <div class="_css_flex _css_flex--between">
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          $00,00
+        </span>
+        <span class="_css_text--bold">
+          saved
+          <i class="fas fa-plus-circle"></i>
+        </span>
+      </div>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          $120,00
+        </span>
+        <span class="_css_text--bold">
+          Per payday
+          <i class="fas fa-chevron-circle-down"></i>
+        </span>
+      </div>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          $450,00
+        </span>
+        <span class="_css_text--bold">
+          Target
+        </span>
+      </div>
+    </div>
+    <div class="_css_border _css_margin-top--sm _css_margin-down--sm">
+    </div>
+
+
+    <span class="_css_text--md _css_text--bold">
+      Speed up your saving
+    </span>
+    <span class="">
+      By getting support from your friends
+    </span>
+
+    <div class="_css_flex">
+      <span class="_css_user _css_user-black _css_position-r _css_padding--sm">
+        <i class="fas fa-user"></i>
+        <span class="fas fa-plus-circle _avatar"></span>
+      </span>
+      <span class="_css_user _css_user-gray _css_padding--sm">
+        <i class="fas fa-user"></i>
+      </span>
+      <span class="_css_user _css_user-gray _css_padding--sm">
+        <i class="fas fa-user"></i>
+      </span>
+    </div>
+    <div class="_css_card _css_padding--sm _css_margin-down--md">
+      <div class="_css_flex _css_flex--align">
+        <div class="_css_flex _css_flex--column">
+          <span class="_css_text--bold">
+            Reach 20% of your balance
+          </span>
+          <span>
+            Get 5% of
+          </span>
+        </div>
+        <button class="_css_margin-auto" (click)="share(true)">
+          Share
+        </button>
+      </div>
+    </div>
+    <div class="_css_border _css_margin-top--sm _css_margin-down--sm">
+    </div>
+
+    <span class="_css_text--bold _css_text--md">
+      Get it Right Now!
+    </span>
+    <div class="_css_flex">
+      <div class="_css_flex _css_flex--column gr-7">
+        <span class="_css_margin-down--sm">
+          Special offer
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          With Zoomer
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          6% OFF
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          $50.00 per payday
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          8 month
+          <i class="fas fa-chevron-circle-down"></i>
+        </span>
+        <button class="gr-5 _css_margin-down--sm">
+          Claim
+        </button>
+        <span class="_css_text--xs">
+          Annual interest rate from 9%
+        </span>
+        <span class="_css_text--xs">
+          Effective interest rate from 15%
+        </span>
+      </div>
+      <div class="_css_apple gr-5">
+
+      </div>
+    </div>
+  </div>
+  <div class="_css_padding--md _share_modal" *ngIf="shareView===true">
+    <div class="_css_flex _css_flex--column">
+      <span class="_css_text--bold _css_text--md">
+        Attach ote
+      </span>
+      <span>
+        Please, support me to get 5% of Apple watch Series 5
+      </span>
+    </div>
+    <div class="_css_flex _css_flex--column" >
+        <div class="_css_border-header _css_margin-down--md"></div>
+        <button (click)="share(false)">
+          Send
+        </button>
+    </div>
+  </div>
+</div>
+
+<div class="" *ngIf="homeView==='details'">
+  <div class="_css_flex _css_flex--center _css_flex--align _css_position-r _css_padding--md _css_border-header">
+    <span class="_close" (click)="changeView('home')">x</span>
+    <span class="_css_text--bold _css_text--md">
+      Apple Wath Series 5
+    </span>
+  </div>
+
+  <div class="_css_padding--md _css_flex _css_flex--column">
+    <div class="_css_flex _css_flex--between _css_margin-down--sm">
+      <span>Today</span>
+      <span>31 Dec 2019</span>
+    </div>
+    <div class="_progress-wrapp _css_margin-down--sm">
+      <div class="_progress-content _progress-10">
+      </div>
+    </div>
+    <div class="_css_flex _css_flex--between">
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          $200,00
+        </span>
+        <span class="_css_text--bold">
+          saved
+          <i class="fas fa-plus-circle"></i>
+        </span>
+      </div>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          $120,00
+        </span>
+        <span class="_css_text--bold">
+          Per payday
+          <i class="fas fa-chevron-circle-down"></i>
+        </span>
+      </div>
+      <div class="_css_flex _css_flex--column">
+        <span class="_css_text--bold">
+          $450,00
+        </span>
+        <span class="_css_text--bold">
+          Target
+        </span>
+      </div>
+    </div>
+    <div class="_css_border _css_margin-top--sm _css_margin-down--sm">
+    </div>
+
+    <span class="_css_text--bold _css_text--md _css_margin-down--sm">
+      Your Challange
+    </span>
+    <span class="_css_text--bold _css_margin-down--sm">
+      Friends supported to you
+    </span>
+    <div class="_css_flex">
+      <div class="_css_flex _css_flex--column gr-7">
+        <span class="">
+          Special offer
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          With Zoomer
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          10% OFF
+        </span>
+        <button class="gr-5 _css_margin-down--sm">
+          Claim
+        </button>
+      </div>
+      <div class="_css_apple gr-5">
+
+      </div>
+    </div>
+
+
+    <div class="_css_border _css_margin-top--sm _css_margin-down--sm">
+    </div>
+
+    <span class="_css_text--bold _css_text--md">
+      Get it Right Now!
+    </span>
+    <div class="_css_flex">
+      <div class="_css_flex _css_flex--column gr-7">
+        <span class="_css_text--sm _css_margin-down--sm">
+          $50.00 per payday
+        </span>
+        <span class="_css_text--sm _css_margin-down--sm">
+          8 month
+          <i class="fas fa-chevron-circle-down"></i>
+        </span>
+        <button class="gr-5 _css_margin-down--sm">
+          Claim
+        </button>
+        <span class="_css_text--xs">
+          Annual interest rate from 9%
+        </span>
+        <span class="_css_text--xs">
+          Effective interest rate from 15%
+        </span>
+      </div>
+      <div class=" gr-5">
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

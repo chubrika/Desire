@@ -1,0 +1,93 @@
+._css_carousel {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+    &__wrap {
+        padding: 0 3px;
+        width: 16.66666%;
+        min-width: 16.66666%;
+        @include laptop-sm {
+            width: 20%;
+            min-width: 20%;
+        }
+        @include tablet {
+            width: 25%;
+            min-width: 25%;
+        }
+        @include mobile {
+            width: 50%;
+            min-width: 50%;
+        }
+        @include mobile-sm {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+    &__scroll {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -khtml-touch-action: manipulation;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        overflow: hidden;
+        cursor: pointer;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        &-title {
+            color: rgba(17, 17, 17, 0.68);
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-top: 10px;
+            line-height: 1.6rem;
+            padding-right: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            white-space: normal;
+            text-overflow: ellipsis;
+            max-height: 38px;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        &-desc {
+            overflow-x: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 1rem;
+            padding-top: 10px;
+            color: rgba(17, 17, 17, 0.6);
+        }
+        &-img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__content {
+        display: inline-flex;
+    }
+    &__header {
+        height: 50px;
+        display: flex;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 3px;
+        align-items: center;
+    }
+}

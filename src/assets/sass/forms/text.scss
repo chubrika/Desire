@@ -1,0 +1,20 @@
+._css_text {
+    &--white {
+        color: #fff;
+    }
+    &--bold {
+        font-weight: 600;
+    }
+    &--center {
+        text-align: center;
+    }
+    &--lg{
+        font-size: 30px;
+    }
+    &--md{
+        font-size: 20px;
+    }
+    &--xs{
+        font-size: 10px;
+    }
+}

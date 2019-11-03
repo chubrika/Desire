@@ -1,0 +1,173 @@
+.slide {
+    &__text {
+        bottom: 0;
+        left: 50px;
+        width: 100%;
+        font-size: 22px;
+        font-weight: 600;
+        position: absolute;
+        padding-bottom: 20px;
+        &-link {
+            font-size: 16px;
+            color: #c6cfd6;
+            text-decoration: underline;
+            &:hover {
+                color: white ;
+            }
+        }
+        &-desc {
+            color: white;
+            font-size: 15px;
+        }
+    }
+    &__edit {
+        display: flex;
+        width: 100%;
+        height: 350px;
+        padding: 0px 50px;
+        align-items: center;
+        border: 3px dashed gray;
+        &-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            input,
+            textarea {
+                border: 2px dotted rgb(128, 128, 128)
+            }
+            textarea {
+                margin: 0;
+            }
+            &--info {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                position: relative;
+                align-items: flex-start;
+                justify-content: flex-end;
+                flex-direction: column;
+                &-desc {
+                    width: 100%;
+                }
+            }
+        }
+        &-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+    &__upload {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        input {
+            display: none;
+        }
+        &-button {
+            min-width: 115px;
+            background: gray;
+            border-radius: 3px;
+            color: white;
+            min-height: 45px;
+            padding: 0 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__save {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        button {
+            border: 2px solid gray;
+            color: gray;
+            &:hover {
+                border: 2px solid #9cbc68;
+                color: #9cbc68;
+            }
+        }
+    }
+    &__check {
+        position: absolute;
+        color: #ffffff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #35ec07;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        bottom: -15px;
+        font-size: 19px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        right: -70px;
+        &:hover {
+            background-color: gray;
+        }
+    }
+    &__remowe {
+        position: absolute;
+        right: -70px;
+        color: #ffffff;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+        margin-top: 11px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        top: -32px;
+        &:hover {
+            background-color: gray;
+        }
+    }
+    &__arrow {
+        cursor: pointer;
+        font-size: 100px;
+        position: absolute;
+        transition: all 0.5s ease;
+        color: rgba(255, 255, 255, 0.5);
+        &-left {
+            left: 12px;
+        }
+        &-right {
+            right: 12px;
+        }
+        &:hover {
+            color: rgba(255, 255, 255, 0.79);
+        }
+    }
+}
+
+.slide__uploaded {
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    input,
+    textarea {
+        color: #fff;
+        border: 2px dotted #fff;
+    }
+}
+
+.upload_img {
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: gray;
+}

@@ -1,0 +1,113 @@
+footer {
+    display: flex;
+    margin: 0;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+._css_footer {
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    color: rgb(109, 109, 109);
+    font-weight: 600;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 1px 15px rgba(125, 125, 125, 0.12);
+    justify-content: space-between;
+    &__text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &__socials {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &--icon {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            padding: 15px;
+            cursor: pointer;
+            margin-right: 5px;
+            align-items: center;
+            justify-content: center;
+            &-fb {
+                color: #677fb5;
+                transition: all 0.5s ease;
+                border: 2px solid #677fb5;
+            }
+            &-tw {
+                color: #70c2e9;
+                transition: all 0.5s ease;
+                border: 2px solid #70c2e9;
+            }
+            &-inst {
+                color: #b99682;
+                transition: all 0.5s ease;
+                border: 2px solid #b99682;
+            }
+            &-google {
+                color: #dc4a38;
+                transition: all 0.5s ease;
+                border: 2px solid #dc4a38;
+            }
+        }
+    }
+}
+
+._css_footer {
+    &__socials {
+        &--icon {
+            &-fb {
+                &:hover {
+                    color: #fff;
+                    background-color: #677fb5;
+                }
+            }
+            &-tw {
+                &:hover {
+                    color: #fff;
+                    background-color: #70c2e9;
+                }
+            }
+            &-inst {
+                &:hover {
+                    color: #fff;
+                    background-color: #b99682;
+                }
+            }
+            &-google {
+                &:hover {
+                    color: #fff;
+                    background-color: #dc4a38;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 968px) {
+    ._css_footer {
+        padding: 30px;
+        flex-direction: column;
+        &__text {
+            text-align: center;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+        &__socials {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ._css_footer {
+        width: 95%;
+    }
+}

@@ -1,0 +1,39 @@
+$laptop-width: 1440px;
+$laptop-md-width: 1280px;
+$laptop-sm-width: 1024px;
+$tablet_width: 998px;
+$mobile_width: 768px;
+$mobile_width_small: 322px;
+
+@mixin laptop {
+  @media (max-width: #{$laptop-width}) {
+    @content;
+  }
+}
+@mixin laptop-md {
+  @media (max-width: #{$laptop-md-width}) {
+    @content;
+  }
+}
+@mixin laptop-sm {
+    @media (max-width: #{$laptop-sm-width}) {
+      @content;
+    }
+  }
+@mixin tablet {
+  @media (max-width: #{$tablet_width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile_width}) {
+    @content;
+  }
+}
+
+@mixin mobile-sm {
+  @media (max-width: #{$mobile_width_small}) {
+    @content;
+  }
+}
